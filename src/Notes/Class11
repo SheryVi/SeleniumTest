@@ -1,0 +1,79 @@
+Selenium Class 11
+
+If regular click does not work you can use the alternative
+way of having Action Class click method
+
+Upload Documents:
+In order to upload documents using selenium we simply do
+sendKeys(filePath)
+
+If sendKeys does not work, you can use Robot Class
+
+JavaScriptExecutor
+it is a library in Selenium which can be executed in different programming languages
+(java, c#, etc)
+
+JSExecutor is an interface
+
+Actions which can be performed by using JSExecutor:
+Click on the element -->  last option if regular click and actions click don't work
+                          js.executeScript("arguments[0].style.backgroundColor='red'", userName);
+scroll through the page
+refresh the page
+highlight an element
+open a new tab
+
+HW
+open new browser
+open new tab
+navigate to a different on a new tab
+
+[use window.open() method and switchTo method to Handle to window ]
+[use window handle]
+
+HW:
+TC 1: HRMS blank password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and leave password field empty
+Click on login button
+Verify error message with text "Password cannot be empty" is displayed
+Take a screenshot before quitting the browser
+
+[]
+
+
+TC 2: HRMS blank username and password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Leave username and password field empty
+Click on login button
+Verify error message with text "Username cannot be empty" is displayed
+Take a screenshot before quitting the browser
+
+[]
+
+TC 3: HRMS invalid credentials validation
+Navigate to "Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and wrong password
+Click on login button
+Verify error message with text "Invalid credentials is displayed"
+Take a screenshot before quitting the browser
+
+
+[]
+TC 4: do on selenium project
+Go to http://www.uitestpractice.com/
+interact with drag and drop, iframe, double click
+click on home
+delete one user from the table
+go to the next link
+click on the ajax link is displayed
+go to From
+and fill out everything
+go to widgets
+upload any file and verify it is uploaded
+go to actions and perform all the necessary
+go to SwitchTo
+work with alerts and frames
+go to select
+perform actions on all dropdowns
+

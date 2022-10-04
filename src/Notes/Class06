@@ -1,0 +1,52 @@
+Selenium Class 06
+
+Alerts:
+Alert is a pop up message. Alert takes a complete focus of our main page that we are working on
+We cannot proceed until it is handled
+
+Оповещение - это всплывающее сообщение. Оповещение полностью фокусируется на нашей главной странице, над которой мы работаем
+Мы не можем продолжать, пока это не будет улажено
+
+3 types of Alerts:
+1. web based alerts/ html alerts - we can simply inspect and perform need actions
+2. Javascript alerts/ browser alerts - we can handle these alerts by using switchTo method
+                                       we cannot inspect
+3.Windows based alerts - we cannot handle with Selenium
+
+Types of JS alerts
+1. Simple alert - click ok
+2. conformation alert - either cancel or click ok
+3. prompt alert - enter the text and them click ok or cancel
+
+To handle JavaScripts Alerts we only have 4 methods:
+1. accept() - click ok
+2. dismiss() - click cancel
+3. getText()
+4. sendKeys()
+
+To handle authentication alerts we need to pass username and password in the URL
+"http://admin:admin@the-internet.herokuapp.com/basic_auth";
+     //username:password@
+
+Frames
+
+Frame is separate independent window in out webpage
+Рамка - это отдельное независимое окно на веб-странице
+
+Frames allow developers to represent multiple views on one page
+Фреймы позволяют разработчикам представлять несколько представлений на нашей странице
+
+3 ways to interact with Frames:
+1. by index
+2. by name or ID
+3. by WebElement
+
+in alerts - switch to alerts and switch automatically back
+в оповещениях - переключитесь на оповещения и автоматически переключитесь обратно
+
+in frames - switch to frame manually and back to the main page
+во фреймах - переключитесь на фрейм вручную и вернитесь на главную страницу
+
+
+
+

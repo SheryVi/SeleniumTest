@@ -1,0 +1,73 @@
+Selenium Class 04
+
+CCS Selector (Cascading Style Sheet)
+
+Это другой способ искать элементы на вэб-странице
+
+Syntax:
+tagname[attribute = 'attribute value']
+
+Example:
+input[type = 'submit']
+
+CSS не предоставляет возможность искать элемент по тексту
+
+Ярлыки для CCS:
+Ярлык для ClassName --> "."
+
+Syntax: tagname.classNameValue
+        div.gb_Id
+
+Ярлык для ID --> "#"
+Syntax: tagname#IdValue
+        input#unifiedLocation1ClickAddress
+
+contains() метод в ccs:
+* symbol represents contains method
+tagname[attribute *= 'attribute value']
+        input[name *= dropdown-selection]
+
+starts-with метод в ccs:
+^ (Circumflex) символ предоставляющий метод starts-with
+    tagname[attribute ^= starting attribute value]
+    input[type ^= 'pass']
+
+end-with method in ccs:
+$ symbol represents ends-with method in ccs
+tagname[attribute $= 'ending attribute value']
+    script[src $= '.js']
+
+Xpath vs CSS
+
+--CCS не может искать элементы по тексту
+--у Xpath нет метода ends-with (в поиске элементов)
+--CCS быстрее чем Xpath
+--CCS имеет ярлыки
+--CCS имеет более простой syntax чем Xpath
+
+WebElement Commands:
+Содержит несколько методов с помощью которых мы сможем выполнять действия
+и получать состояния элементов на вэб-странице
+
+isEnable() --boolean value
+isDisplayed() -- boolean value
+isSelected() -- boolean value
+
+clear() -- void
+getText() -- String value
+getAttribute() -- String value
+submit() -- void
+
+
+
+
+
+
+
+
+
+
+
+
+
+

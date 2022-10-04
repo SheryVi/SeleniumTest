@@ -1,0 +1,93 @@
+Selenium Class 03
+
+Почему нам нужен Xpath и CCS Selector?
+
+-- Разработчики не будут предоставлять все локаторы (например только tags и attribute values)
+-- Используя Xpath и CCS Selector помогает идентифицировать элементы с любыми данными
+
+Что такое Xpath?
+
+-- Xpath похож на язык запросов, который помогает нам однозначно идетифицировать элементы на веб-странице
+(is like a query language which helps us to identify elements uniquely on the web-page)
+
+Типы Xpath:
+
+--Абсолютный --> начинается с узла (node) in html
+                 всегда начинается с единичного слеша(/)
+                /html/body/div/div/div/div
+(при изменении веб-страницы/html кода могут возникнуть проблемы с поиском нужного веб-элемента,
+абсолютный Xpath изменится и не сработает)
+
+
+--Относительный --> может начинаться из любого места/узла html кода
+                    всегда начинается с двойного слеша(//)
+
+--Синтакс для относительного xpath:
+                    //tagname[@attribute = 'attribute value']
+
+Example: //input[@id = 'customer.firstName']
+
+--Определение элементов по их тексту:
+//tagname[text() = 'text value']
+
+Example: //b[text() = 'Password']
+
+--Определение элемента с помощью метода contains
+
+//tagname[contains(@attribute, 'partial attribute value')]
+
+Example: //input[contains(@name, 'username')]
+
+Starts-with идентифицирует элемент с частичным начальным значением
+//tagname[starts-with(@attribute, 'partial starting attribute value')]
+
+Example: //td[starts-with(@align, 'right')]
+
+ends-with использовался в xpath 1.0 мы же используем 2.0 и этот метод недоступен
+
+
+<div> -- division - разделение
+<img> -- image - изображение
+<h> -- header - заголовок
+<p> -- paragraph - параграф
+<li> -- list- список
+<ul> -- unordered list - неупорядоченный список
+<ol> -- ordered list - упорядоченный список
+<br> -- breaking line - разрыв строки html
+
+Advance Xpath:
+-- он основан на родителе и ребенке, иемеет братьев и сестер
+
+-- определение элемента по родственным отношениям (sibling)
+//tagname[@attribute = 'attribute value']/following-sibling::tagname
+
+Example: //input[@name = 'ctl00$MainContent$username']/following-sibling::label
+
+-- определение элементов по предшествующим братьям/сестрам (siblings)
+
+Example: //input[@name = 'ctl00$MainContent$username']/preceding-sibling::label
+//div[@class = 'a-section a-spacing-none a-text-center image-label truncate-2line']/preceding-sibling::div
+
+-- определение элементов по родителю
+//tagname[@attribute = 'attribute value']/parent::parentTagName
+
+-- определение элементов по предку
+//div[@class = 'a-cardui-header']/ancestor::div
+
+-- определение элементов по индексу
+
+(//img[@class= 'smile__smile-img'])[1]
+
+X-Path --> без тэга
+//*[contains(text(), 'Welcome')]
+
+Если мы видим аттрибут ID с числовым значением это делает его немного нестабильным
+
+
+
+
+
+
+
+
+

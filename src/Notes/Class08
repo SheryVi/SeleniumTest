@@ -1,0 +1,80 @@
+Selenium Class 08
+
+Implicit Wait:
+will be applied for findElement method
+будет применен для метода findElement
+
+Explicit Wait or WebDriver Wait:
+it is used to tell WebDriver to wait for a certain condition
+before throwing an exception for specified condition
+
+он используется для указания WebDriver дождаться определенного условия,
+прежде чем выдавать исключение для указанного условия
+
+Explicit Wait works with ExpectedCondition class and
+waits until certain conditions are met or the given time is achieved
+
+Явное ожидание работает с классом ExpectedCondition и ожидает,
+пока не будут выполнены определенные условия или не будет достигнуто заданное время
+
+* sign in xpath is a wild card which can identify any tagname
+//*[contains(text(), 'Welcome')]
+
+
+Fluent Wait --> Global wait
+
+it is used to tell the webdriver to wait for certain condition as well as its frequency
+before throwing an exception
+
+он используется для указания webdriver дождаться определенного условия, а также его частоты,
+прежде чем выдавать исключение
+
+Implicit Wait -- waits to locate the element
+Explicit Wait -- waits until certain condition
+Fluent wait -- sets timeouts, polling and ignores needed exceptions
+
+Неявное ожидание - ожидает определения местоположения элемента
+Явное ожидание - ожидает до определенного состояния
+Свободное ожидание - устанавливает тайм-ауты, опрашивает и игнорирует необходимые исключения.
+
+WebTables:
+WebTables are elements on the webpage, witch are constructed by having rows and column
+Веб-таблицы - это элементы на веб-странице, которые создаются путем наличия строк и столбцов
+
+Types of WebTablas:
+1. Static WebTable
+2. Dynamic WebTable
+
+WebTables consist of different sections or parts
+<table>
+    <thead>
+        <tr>
+            <th> </th> -->column data or header
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td> --> table data
+        </tr>
+    </tbody>
+</table>
+
+HW
+Go to https://the-internet.herokuapp.com/dynamic_controls
+click on checkbox and click on remove
+verify the text
+click enable verify the textbox is enabled
+enter text and click disable
+verify the textbox is disabled
+
+Перейти к https://the-internet.herokuapp.com/dynamic_controls
+установите флажок и нажмите удалить
+проверьте текст
+нажмите включить убедитесь что текстовое поле включено
+введите текст и нажмите отключить
+убедитесь что текстовое поле отключено
+
+create a package and name it as title
+create a class and name as CommonMethods
+create functions(methods) to open and close and quit the browsers
+open methods has to accept a url as a parameter

@@ -1,0 +1,78 @@
+Selenium Class 07
+
+Обработка нескольких окон
+
+In order to handle multiple windows we will be using:
+Для обработки нескольких окон мы будем использовать:
+getWindowHandle()
+geyWindowHandles()
+
+WindowHandle:
+is a unique ID that holds the address of the window or a tab
+It is approximately a 40 alphanumeric character ID
+
+это уникальный идентификатор, содержащий адрес окна или вкладки
+Это примерно 40 буквенно-цифровых символов идентификатора
+
+Синхронизация:
+
+it is the process bringing the speed of two or more components the same level
+это процесс, обеспечивающий одинаковый уровень скорости двух или более компонентов
+
+in this case we are bringing out script and page load to the same speed level
+в этом случае мы выводим загрузку скрипта и страницы на одинаковый уровень скорости
+
+Thread.sleep() -- static wait / unconditional wait
+
+Types of Selenium waits:
+Implicit wait
+Explicit wait
+Fluent wait
+
+Implicit wait:
+it tells the webdriver to wait for a certain amount of time before throwing an exception
+он сообщает webdriver подождать определенное количество времени, прежде чем выдавать исключение
+
+it will only be written once and will be applied to the whole session of the execution
+он будет записан только один раз и будет применен ко всему сеансу выполнения
+
+we can say that Implicit wait is a global wait
+мы можем сказать, что неявное ожидание - это глобальное ожидание
+
+Implicit wait works with findElement() method
+
+Implicit wait is usually set to 20 seconds. If your elements is found ia any time between the given time
+the remaining time will be ignored an your script will move on to the next line or action
+
+Неявное ожидание обычно устанавливается равным 20 секундам.
+Если ваши элементы будут найдены в любое время между заданным временем,
+оставшееся время будет проигнорировано, и ваш скрипт перейдет к следующей строке или действию
+
+if the element is not found in a given time, ONLY then you will get an exception
+если элемент не найден в течение заданного времени, ТОЛЬКО тогда вы получите исключение
+
+HW
+Go to http://demoqa.com/browser-windows
+click on New Tab and print the text from new tab in the console
+click on New Window and print the text from new window in the console
+click on New Window Message and print the text from new window in the console
+Verify (compare)the titles for each page
+Print out the title of the all pages
+
+
+Перейти к http://demoqa.com/browser-windows
+нажмите на Новую вкладку и распечатайте текст с новой вкладки в консоли
+нажмите на Новое окно и распечатайте текст из нового окна в консоли
+нажмите на Сообщение нового окна и распечатайте текст из нового окна в консоли
+Проверьте (сравните) заголовки для каждой страницы
+Распечатайте название всех страниц
+
+HW
+navigate to http://www.uitestpractice.com/Students/Contact
+click on the text
+get text
+print out in the console
+
+перейдите к http://www.uitestpractice.com/Students/Contact
+нажмите на текст
+распечатать текст в консоли

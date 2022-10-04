@@ -1,0 +1,26 @@
+Selenium Class 09
+лдя работу с таблицей необходимо использовать List<WebElement> чтобы сохранить все строки таблицы
+далее необходимо пройтись по всем элементам строк с помощью цикла for()  или Iterator
+чтобы получить текст из строк необходио использовать метод .getText();
+чтобы найти конкретное название строки необходимо вновь использовать if condition текстСтроки.contains("Bob")
+также нужно использовать List где нужно сохранить выбранный элемент(с помощью x-path)
+далее обработать этот элемент с помощью метода .get(i-1).click();
+
+Tables divided into several pages, the navigation bar ia called PAGINATION
+Таблицы разделены на несколько страниц, панель навигации называется РАЗБИВКОЙ на страницы
+
+Calendars:
+are also known as date-pickers
+также известны как сборщики дат
+
+HW Go to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+click on leave
+click on leave lis
+choose from "From calendar"
+choose from "To calendar"
+click only on cancelled and rejected checkboxes
+uncheck Pending Approval
+select IT support from DD
+click search
+quit browser
+
